@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Hockey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-board">
+            <div class="player-score">Player: <span id="player-score">0</span></div>
+            <div class="ai-score">BOT: <span id="ai-score">0</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-over" class="hidden">
+            <div id="winner-message"></div>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
